@@ -1,0 +1,39 @@
+cat > privacy-policy.html << 'EOF'
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Boenique Prime</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: linear-gradient(to bottom, #00b4d8, #0077b6); color: #ffffff; margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #023e8a; padding: 50px 20px; text-align: center; position: relative; overflow: hidden; }
+        header::before { content: ""; position: absolute; bottom: -20px; left: 0; width: 100%; height: 50px; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCwzMDAgTDEyMDAsMzAwIEMxMjAwLDMwMCAxMTYwLDQzNCA4MDAsNDM0IEM0NDAsNDM0IDQwMCwzMDAgNDAwLDMwMCBMMCwzMDAgWiIgZmlsbD0iIzAwNzdCNiIvPjwvc3ZnPg==') repeat-x; }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; background-color: rgba(0, 0, 0, 0.3); border-radius: 10px; }
+        h1, h2 { color: #caf0f8; }
+        footer { text-align: center; padding: 20px; background-color: #023e8a; font-size: 0.8em; }
+        .shark-icon { font-size: 3em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="shark-icon">🦈</div>
+        <h1>Boenique Prime - Gizlilik Politikası</h1>
+        <p>Yürürlük Tarihi: 28 Aralık 2025</p>
+    </header>
+    <div class="container">
+        <h2>1. Toplanan Veriler</h2>
+        <p>Sadece bot işlevi için gerekli veriler toplanır: User ID, seviye, gönderilen mesaj sayısı, abonelik tarihleri.</p>
+        <h2>2. Veri Kullanımı</h2>
+        <p>Veriler sadece limit uygulama, istatistik ve log için kullanılır. Üçüncü taraflarla paylaşılmaz.</p>
+        <h2>3. Veri Saklama</h2>
+        <p>SQLite veritabanında güvenli saklanır. İsterseniz /level-remove ile silinebilir.</p>
+        <h2>4. Haklarınız</h2>
+        <p>Verilerinize erişim ve silme talebi için Discord üzerinden ulaşabilirsiniz.</p>
+    </div>
+    <footer>
+        © 2025 Boenique Prime. Tüm hakları saklıdır.
+    </footer>
+</body>
+</html>
+EOF

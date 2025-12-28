@@ -1,0 +1,36 @@
+cat > interactions.html << 'EOF'
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactions Endpoint - Boenique Prime</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: linear-gradient(to bottom, #00b4d8, #0077b6); color: #ffffff; margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #023e8a; padding: 50px 20px; text-align: center; position: relative; overflow: hidden; }
+        header::before { content: ""; position: absolute; bottom: -20px; left: 0; width: 100%; height: 50px; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCwzMDAgTDEyMDAsMzAwIEMxMjAwLDMwMCAxMTYwLDQzNCA4MDAsNDM0IEM0NDAsNDM0IDQwMCwzMDAgNDAwLDMwMCBMMCwzMDAgWiIgZmlsbD0iIzAwNzdCNiIvPjwvc3ZnPg==') repeat-x; }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; background-color: rgba(0, 0, 0, 0.3); border-radius: 10px; }
+        h1, h2 { color: #caf0f8; }
+        footer { text-align: center; padding: 20px; background-color: #023e8a; font-size: 0.8em; }
+        .shark-icon { font-size: 3em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="shark-icon">🦈</div>
+        <h1>Boenique Prime - Interactions Endpoint</h1>
+    </header>
+    <div class="container">
+        <h2>Genel Bakış</h2>
+        <p>Bu endpoint, Discord slash komutları için resmi interaction noktasıdır. Tüm komutlar ( /start, /stop, /stats vb.) buradan işlenir.</p>
+        <h2>Desteklenen Komutlar</h2>
+        <p>/start, /stop, /update-level, /stats, /leaderboard, /yardım</p>
+        <h2>Güvenlik</h2>
+        <p>Discord signature doğrulaması ve seviye hiyerarşisi ile korunur.</p>
+    </div>
+    <footer>
+        © 2025 Boenique Prime.
+    </footer>
+</body>
+</html>
+EOF
